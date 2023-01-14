@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My Personal Plotfolio" />
+    <meta property="og:image" content="../logo/social.png" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:width" content="400" />
+    <title>Raffsun</title>
+    <link rel="icon" href="../logo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/4c390d8bb6.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <section class="second">
+      <div class="heading">
+        <h1>Suggest Me</h1>
+      </div>
+      <div class="all">
+        <div class="cut-img">
+            <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_ghs9bkkc.json"  background="transparent"  speed=".5"  loop autoplay></lottie-player>
+        </div>
+
+        <form class="form" method="POST" action="https://formsubmit.co/raffsun5@gmail.com" enctype="multipart/form-data">
+
+          <div id="first">
+              <label id="name-label" for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control" autocomplete="off" placeholder="Enter your name" required="">
+
+              <label id="name-label" for="email">Email-Address</label>
+              <input type="email" name="email" id="email" class="form-control" autocomplete="off" placeholder="Email-Address" required="">
+
+
+              <label id="name-label" for="phone">Phone</label>
+              <input type="tel" name="phone" id="phone" class="form-control" autocomplete="off" placeholder="Phone Number">
+
+
+
+
+              <input type="hidden" name="_next" value="https://raffsun7.github.io/raffsun.com/done/send.html">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              
+          </div>
+          <div id="second">
+
+              <p>Message</p>
+               <textarea id="message" class="input-textarea" name="message" placeholder="Enter your message here..." required=""></textarea>
+          </div>
+
+          <input name="attachment" class="filess" type="file" id="file" accept="application/msword, application/vnd.ms-excel, application/vnd.ms-powerpoint,
+          text/plain, application/pdf, image/*">
+          <label for="file" class="labelOfFiles"><i class="fa-solid fa-file-circle-plus"></i> &nbsp;  Choose a File</label>
+
+
+
+          <div class="button">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+          </div>
+          <input type="hidden" name="_autoresponse" value="Hey there, Thanks for submitting the form. I will reply you very soon! Please wait sometime!">
+        </form>
+      </div>
+    </section>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  </body>
+  
+</html>
