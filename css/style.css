@@ -9,28 +9,18 @@
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
-:root{
- /* main theme */
- /* --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;  */
- /* for Dark theme */
+
+.light-mode{
+    --bg-color: #E6E6E6;
+    --second-bg-color: #b5b5b5;
+    --text-color: #080808;
+    --main-color: #2a43ff;
+}
+.dark-mode{
     --bg-color: #080808;
     --second-bg-color: #1f1f1f;
     --text-color: #ededed;
-    --main-color: #83aeff;   
- /* for light theme */
- /* --bg-color: #E6E6E6;
-    --second-bg-color: #b5b5b5;
-    --text-color: #080808;
-    --main-color: #2a43ff; */
-}
-
-.home{
-    /* background:url("../images/home.png"); */
-     background:url("../images/home2.png");
-     /* background:url("../images/home3.png");  */
+    --main-color: #83aeff; 
 }
 
 html{
@@ -98,9 +88,6 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 .home-content{
     max-width: 60rem;
@@ -871,4 +858,51 @@ section:nth-child(odd) .animate.scroll,
     100%{
         width: 0;
     }
+}
+
+.light-mode.dark-mode .home{
+    background:url("../images/home2.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.light-mode .home{
+     background:url("../images/home3.png") no-repeat;
+     background-size: cover;
+    background-position: center;
+}
+#theme-toggle {
+    background: none;
+    position: relative;
+    border: none;
+    top: -2.3rem;
+    cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 48rem;
+    transition: .5s;
+  }
+#theme-toggle:hover,
+.light-mode.dark-mode #theme-toggle:hover{
+    color: var(--main-color);
+}
+.light-mode.dark-mode #theme-toggle{
+    color: white;
+}
+  
+  #theme-icon {
+    font-size: 2.2rem;
+  }
+  
+@media (max-width: 768px) {
+#theme-icon {
+    font-size: 20px;
+    text-align: center;
+}
+#theme-toggle{
+    top:0;
+    left: 0;
+    right: 0;   
+}
 }
