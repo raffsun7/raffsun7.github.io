@@ -31,7 +31,7 @@
             <a href="#contact">Contact</a>
             
             <button id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">
-                <i id="theme-icon" class="fas fa-sun"></i> <!-- Initially set to sun icon --><span class="animate" style="--i:2;"></span>
+                </a><i id="theme-icon" class="fas fa-sun"></i> <!-- Initially set to sun icon --><span class="animate" style="--i:2;"></span>
             </button>
             <span class="active-nav"></span>
             <span class="animate" style="--i:2;"></span>
@@ -318,9 +318,15 @@
 
     <script src="js/script.js"></script>
     <script>
+// Check if a theme preference is stored in localStorage
 const storedTheme = localStorage.getItem('theme');
 if (storedTheme) {
   document.documentElement.setAttribute('data-theme', storedTheme);
+} else {
+  // Check system preference and set the theme accordingly
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark-mode' : 'light-mode';
+  document.documentElement.setAttribute('data-theme', systemTheme);
+  localStorage.setItem('theme', systemTheme);
 }
 
 // Toggle theme and store preference
@@ -334,6 +340,7 @@ function toggleTheme() {
   themeIcon.classList.toggle('fa-sun');
   themeIcon.classList.toggle('fa-moon');
 }
+
 
     </script>
 </body>
