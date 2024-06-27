@@ -861,12 +861,12 @@ section:nth-child(odd) .animate.scroll,
 }
 
 .light-mode.dark-mode .home{
-    background:url("../images/home2.png") no-repeat;
+    background:url("../images/A2.png") no-repeat;
     background-size: cover;
     background-position: center;
 }
 .light-mode .home{
-     background:url("../images/home3.png") no-repeat;
+     background:url("../images/A1.png") no-repeat;
      background-size: cover;
     background-position: center;
 }
