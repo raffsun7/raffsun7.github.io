@@ -65,6 +65,13 @@ body {
     width: 30px;
 }
 
+.logo span {
+  background: linear-gradient(90deg, #7b98fd, #0028ff);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .nav-list {
     display: flex;
     list-style: none;
@@ -376,7 +383,7 @@ body {
 }
 
 .btn-primary {
-    background-color: var(--primary-color);
+    background: linear-gradient(145deg, #2c00ff 0%, #af00ff 100%);
     color: white;
     box-shadow: 0 4px 15px rgba(111, 95, 234, 0.4);
 }
