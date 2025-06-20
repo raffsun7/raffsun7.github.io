@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter-Box | Crafted Projects</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="files/icon.svg" alt="Letter-Box Logo" class="logo-img">
+                <span>Letter-Box</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="#home">Home</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Crafted Projects. Ready to Launch.</h1>
+                <p>Preview, interact, and download — all in one elegant interface.</p>
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+            </div>
+            <div class="hero-background">
+                <div class="glass-tile"></div>
+                <div class="glass-tile"></div>
+                <div class="glass-tile"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Our Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/2.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>LifePad Plus</h3>
+                        <p>A Productive AI Web-App.</p>
+                        <div class="project-buttons">
+                            <a href="http://app.letter-box.xyz" class="btn btn-glass">Open</a>
+                        
+                        <!--For Apk-->
+                        <!-- 
+                            <a href="http://eid.letter-box.xyz/files/CardMaker.apk" class="btn btn-glass download-btn">
+                                <span class="download-text">Download APK</span>
+                                <span class="download-progress"></span>
+                            </a>
+                        -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/1.png" alt="Project 1">
+                    </div>
+                    <div class="project-info">
+                        <h3>Eid-Card Maker</h3>
+                        <p style="color: red;">Not Available Right Now.</p>
+                        <div class="project-buttons">
+<!--
+                            <a href="http://eid.letter-box.xyz" class="btn btn-glass">Open</a>
+                        
+                        
+                         
+                            <a href="http://eid.letter-box.xyz/files/CardMaker.apk" class="btn btn-glass download-btn">
+                                <span class="download-text">Download APK</span>
+                                <span class="download-progress"></span>
+                            </a>
+                        -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Card -->
+                <div class="project-card coming-soon">
+                    <div class="coming-soon-overlay">
+                        <span>🚧 Coming Soon...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect With Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/raffu.letterbox/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/raffu.letterbox/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="mailto:contact.letter-box.xyz"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <p>© 2025 Letter-Box. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
